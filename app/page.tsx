@@ -1,9 +1,19 @@
+"use client";
 import { faker } from "@faker-js/faker";
 import RestartButton from "./components/RestartButton";
+import Results from "./components/Results";
+import { useState, useEffect } from "react";
 
-const words = faker.random.words(10);
-
+const words = faker.lorem.words(10);
+ 
 const Page = () => {
+
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <>
       <CountdownTimer timeLeft={30} />
@@ -11,6 +21,12 @@ const Page = () => {
       <RestartButton
         className={"mx-auto mt-10 text-slate-500"}
         onRestart={() => null}
+      />
+      <Results
+        className="mt-10"
+        errors={10}
+        accuracyPercentage={100}
+        total={200}
       />
     </>
   );
