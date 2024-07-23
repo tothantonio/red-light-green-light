@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { MdRefresh } from "react-icons/md";
 
+
 const RestartButton = ({
   onRestart: handleRestart,
   className = "",
@@ -14,7 +15,7 @@ const RestartButton = ({
     buttonRef.current?.blur();
     handleRestart();
   };
-
+  
   return (
     <button
       tabIndex={-1} // to prevent focus
