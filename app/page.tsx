@@ -15,6 +15,7 @@ const Page = () => {
   return (
     <>
       <CountdownTimer timeLeft={timeLeft} /> 
+      <Red_light/>  <Green_light/>
       <WordsContainer>
         <GeneratedWords words={words} />
         <UserTypings 
@@ -51,6 +52,14 @@ const GeneratedWords = ({ words }: {words: string}) => {
 
 const CountdownTimer = ({ timeLeft }: {timeLeft: number}) => {
   return <h2 className="text-primary-400 font-medium">Time: {timeLeft}</h2>;
+};
+
+const Red_light = () => {
+  return <div className=" text center text-red-500">It&apos;s red!</div>
+};
+
+const Green_light = () => {
+  return <div className=" text center text-green-500">It&apos;s green!</div>
 };
 
 export default Page;
