@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { faker } from "@faker-js/faker";
 import RestartButton from "./components/RestartButton";
