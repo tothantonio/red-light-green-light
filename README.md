@@ -19,4 +19,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 ![image](https://github.com/user-attachments/assets/d116c049-a91c-47bd-8db0-30f0999f662f)
+I abandoned this project, but I will keep it as an archive.
 
